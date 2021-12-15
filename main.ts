@@ -11,7 +11,7 @@ let strip = neopixel.create(DigitalPin.P15, 2, NeoPixelMode.RGB)
 basic.forever(function () {
     sensor = cuteBot.ultrasonic(cuteBot.SonarUnit.Inches)
     if (sensor < 3) {
-        cuteBot.motors(-20, -20)
+        cuteBot.motors(-35, -35)
         cuteBot.colorLight(cuteBot.RGBLights.ALL, 0x00ff00)
     } else {
         cuteBot.stopcar()
